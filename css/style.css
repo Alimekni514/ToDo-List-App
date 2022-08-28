@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* start Box */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.box {
+    position: relative;
+   width:750px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #fff;
+    padding:20px;
+    border-radius:6px;
+}
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 10px;
+}
+.header .fa-list-check {
+    position: absolute;
+    transform: translateY(-80%);
+    top: 50%;
+    left:5px;
+    color:#777;
+}
+#add {
+    color: white;
+    background-color: red;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    width: 80px;
+}
+#task {
+    width: calc(100% - 100px);
+    padding: 7px 25px;
+    border: 2px solid #ececec;
+    border-radius: 3px;
+}
+.tasks {
+    margin-top:20px;
+    max-height: 290px;
+    overflow-y: auto;
+}
+.tasks .task{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 11px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+}
+.tasks .task label {
+    display: flex;
+}
+.tasks .task label p {
+    margin-left: 8px;;
+}
+.tasks .task {
+    cursor: pointer;
+}
+.task >p {
+    font-size: 13px;
+    color: #777;
+}
+.update::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f044";
+    color:white;
+    margin-right:6px;
+
+}
+.delete::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f1f8";
+    color: white;
+    margin-right:6px;
+}
+.update,.delete {
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    width: 80px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+.update {
+    background-color: rgb(28, 213, 213);
+}
+.delete{
+    background-color: red;
+}
+.jdid {
+    border-radius: 3px;
+    border: 2px solid #ececec;
+
+}
+.task div .update {
+    visibility:hidden;
+}
+.counter {
+    position: fixed;
+    top:20px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px ;
+    border-radius:6px;
+}
+.counter h3 {
+    color:#777;
+    font-weight: 500;margin-top:10px;
+}
+.counter span {
+    display: inline-block;
+    color: white;
+    padding:5px;
+    border-radius: 4px;
+    background-color:rgba(255, 0, 183, 0.832);
+}
+
+
+/* End Box */
